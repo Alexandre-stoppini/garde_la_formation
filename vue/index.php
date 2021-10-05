@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['loggedin'])) {
+    $_SESSION['msg'] = "You must log in first";
+    header('location: controller/login.php');
+}
+if (isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['prenom']);
+    header("location: controller/login.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +26,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -26,7 +39,8 @@
                     <span id="logo"></span>
                 </div>
                 <div class="col-md-2"> <a href="#" class="h5 nav-link">Mon profil</a> </div>
-                <div class="col-md-2"> <a href="#" class="h5 nav-link" id="btn-login">Se déconnecter</a> </div>
+                <div class="col-md-2"> <a href="index.php?logout='1'" class="h5 nav-link" id="btn-login">Se déconnecter</a> </div>
+
             </div>
         </div>
     </nav>
