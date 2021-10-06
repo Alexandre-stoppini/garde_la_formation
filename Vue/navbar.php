@@ -7,7 +7,7 @@
                 <a href="../index.php"><span id="logo"></span></a>
             </div>
             <div class="col-md-2"> <a href="#" class="h5 nav-link">Mon profil</a> </div>
-            <div class="col-md-2"> <a href="index.php?logout='1'" class="h5 nav-link" id="btn-login">Se déconnecter</a> </div>
+            <div class="col-md-2"> <a href="index.php?logout='1'" class="h5 nav-link" id="btn-login">Mes partenaires</a> </div>
 
         </div>
     </div>
