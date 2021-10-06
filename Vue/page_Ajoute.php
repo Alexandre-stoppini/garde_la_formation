@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,10 +24,24 @@
             <select id="motif" class="form-select" name="motif">
                 <option value="non-urgent">benevole</option>
                 <option value="urgent">aide</option>
+=======
+<?php
+include_once "../Vue/header.php";
+?>
+<div class="container my-5">
+    <h1 class="text-center">Ajouter une demande</h1>
+    <form>
+        <div class="mb-3">
+            <label for="motif" class="form-label">Motif : </label>
+            <select name="motif" id="motif" class="form-select">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+>>>>>>> dev_Xin
             </select>
         </div>
         <div class="mb-3">
             <label for="lieu" class="form-label">Lieu : </label>
+<<<<<<< HEAD
             <input type="text" class="form-control" id="lieu" name="lieu">
         </div>
         <div class="mb-3">
@@ -34,6 +49,15 @@
             <textarea class="form-control" id="description" name="description"></textarea>
         </div>
         <button type="submit" class="btn btn-success" name="post_demande">Ajouter</button>
+=======
+            <input type="text" class="form-control" id="lieu">
+        </div>
+        <div class="mb-3">
+            <label for="description">Description</label>
+            <textarea class="form-control" id="description"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Ajouter</button>
+>>>>>>> dev_Xin
     </form>
 </div>
 
