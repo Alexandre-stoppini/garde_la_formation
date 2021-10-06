@@ -57,6 +57,7 @@ if (isset($_POST['spe_user'])) {
     }
     $stmt->execute();
     $stmt->close();
+    header('location: ../index.php');
 }
 /** Login */
 if (isset($_POST['login_user'])) {
