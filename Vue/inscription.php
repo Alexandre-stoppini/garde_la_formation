@@ -3,7 +3,7 @@
 include_once "../Vue/header.php";
 ?>
 
-<div class="container" id="101">
+<div class="container">
     <main>
         <div class="py-5 text-center">
             <h2>Inscription</h2>
