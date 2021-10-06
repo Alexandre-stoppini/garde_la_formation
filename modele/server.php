@@ -85,7 +85,7 @@ if (isset($_POST['login_user'])) {
                 $_SESSION['loggedin'] = TRUE;
                 $_SESSION['id'] = $id;
                 echo 'Welcome !';
-                header('location: ../vue/index.php');
+                header('location: ../index.php');
 
             } else {
                 // Incorrect password
