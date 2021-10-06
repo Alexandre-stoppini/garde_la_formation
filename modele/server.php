@@ -12,8 +12,7 @@ if (isset($_POST['reg_user'])) {
     $firstName = mysqli_real_escape_string($db, $_POST['firstName']);
     $name = mysqli_real_escape_string($db, $_POST['lastName']);
     $phone = mysqli_real_escape_string($db, $_POST['phone']);
-    $address_1 = mysqli_real_escape_string($db, $_POST['address_1']);
-    $address_2 = mysqli_real_escape_string($db, $_POST['address_2']);
+    $address = mysqli_real_escape_string($db, $_POST['address']);
     $age = mysqli_real_escape_string($db, $_POST['age']);
     $mail = mysqli_real_escape_string($db, $_POST['email']);
     $passwd = mysqli_real_escape_string($db, $_POST['psw']);
@@ -36,7 +35,9 @@ if (isset($_POST['reg_user'])) {
     }
     if (count($errors) === 0) {
 
-        $query = "INSERT INTO users (prenom, nom, phone ,address_1, address_2, age, mail, passwd) VALUES ('$firstName', '$name', '$phone', '$address_1', '$address_2', '$age', '$mail', '" . password_hash($passwd, PASSWORD_DEFAULT, array("cost" => 10)) . "')";
+        $stmt = $db ->prepare("INSERT INTO users (prenom, nom, phone ,address, age, mail, passwd) VALUES ('$firstName', '$name', '$phone', '$address', '$age', '$mail', '" . password_hash($passwd, PASSWORD_DEFAULT, array("cost" => 10)) . "')");
+        $stmt->execute();
+        $stmt->close();
         $_SESSION['prenom'] = $firstName;
         $_SESSION['succes'] = "Connexion réussi";
         header('location: login.php');

@@ -57,7 +57,7 @@ include_once "../Vue/header.php";
                
                     <div class="col-md-4">
                         <label for="country" class="form-label"></label>
-                        <input type="text" class="form-control" placeholder="Ville" id="ville" name="address_2">
+                        <input type="text" class="form-control" placeholder="Ville" id="ville" name="address">
                         <div class="invalid-feedback">
                             Veuillez choisir une Ville
                         </div>
