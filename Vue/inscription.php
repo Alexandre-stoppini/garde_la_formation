@@ -67,14 +67,14 @@ include_once "../Vue/header.php";
                 <div class="row">
                     <div class="col-4">
                         <label for="firstName"></label>
-                        <input type="password" class="form-control" id="firstName" placeholder="Mot de passe" name="psw" required>
+                        <input type="password" class="form-control" id="psw" placeholder="Mot de passe" name="psw" required>
                         <div class="invalid-feedback">
                             Veuillez entrer un mot de passe valide
                         </div>
                     </div>
                     <div class="col-4">
                         <label for="firstName"></label>
-                        <input type="password" class="form-control" id="lastName" placeholder="Confirmez votre mot de passe" name="psw-repeat" required>
+                        <input type="password" class=" form-control " id="psw-repeat" placeholder="Confirmez votre mot de passe" name="psw-repeat" required>
                         <div class="invalid-feedback">
                             Veuillez entrer un mot de passe valide
                         </div>
@@ -98,14 +98,19 @@ include_once "../Vue/header.php";
                     <!--                        </div>-->
                     <!--                    </div>-->
                     <div class="offset-2 col-4">
-                        <button class="w-100 btn btn-primary btn-lg" type="submit" name="reg_user">S'enregistrer</button>
-                    </div>          
+                    <br>  
+                        <button class="w-100 btn btn-primary btn-lg" type="submit" name="reg_user">Valider l'inscription</button>
+                    </div>  
+                    <br>       
             </form>
-
-            <div class="container_signin">
-                <p>Déjà inscrit ? <a href="login.php">Connexion</a></p>
-            </div>
+           
+                   
         </div>
+        <div class="container_signin text-center">
+            
+                <p>Déjà inscrit ? <a href="login.php">Connexion</a></p>
+            
+            </div>
     </main>
 </div>
 <?php

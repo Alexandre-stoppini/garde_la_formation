@@ -12,7 +12,7 @@ if (isset($_GET['logout'])) {
 }
 ?>
 <?php
-include_once "../Vue/header.php";
+include_once "Vue/header.php";
 ?>
 <nav class="py-1">
     <div class="container-fluid">
@@ -112,5 +112,5 @@ include_once "../Vue/header.php";
     </div>
 </div>
 <?php
-include_once "../Vue/footer.php";
+include_once "Vue/footer.php";
 ?>
