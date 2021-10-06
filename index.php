@@ -3,12 +3,12 @@ session_start();
 
 if (!isset($_SESSION['loggedin'])) {
     $_SESSION['msg'] = "You must log in first";
-    header('location: controller/login.php');
+    header('location: Vue/login.php');
 }
 if (isset($_GET['logout'])) {
     session_destroy();
     unset($_SESSION['prenom']);
-    header("location: controller/login.php");
+    header("location: Vue/login.php");
 }
 ?>
 <?php
