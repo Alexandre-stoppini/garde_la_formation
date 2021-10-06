@@ -17,7 +17,6 @@ nav{
 #logo{
     width: 50px;
     height: 50px;
-    background-color: #B9FFFC;
     display: inline-block;
     border-radius: 50%;
 }
@@ -46,4 +45,9 @@ nav{
 }
 body{
     background-color: #7579E7;
+}
+.detail-block{
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding:10px 50px;
 }

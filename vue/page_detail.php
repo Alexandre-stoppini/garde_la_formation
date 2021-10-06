@@ -4,33 +4,36 @@ include_once "../Vue/header.php";
 
 <div class="container my-5 page_detail">
     <h1 class="mb-3 text-center text-light">Détail de demande</h1>
-    <div class="row my-2">
-        <div class="col-md-6">
-            <h5>Prénom </h5>
-            <span>123456abc</span>
+    <div class="row my-2 d-flex justify-content-center text-light">
+        <div class="col-md-5 my-2 mx-5 text-center detail-block">
+            <span class="h5">Prénom :</span>
+            <span class="px-2">123456abc</span>
         </div>
-        <div class="col-md-6">
-            <h5>Age </h5>
-            <span> 26 </span>
-        </div>
-    </div>
-    <div class="row my-2">
-        <div class="col-md-6">
-            <h5>Télphone </h5>
-            <span> 06 24 52 39 56</span>
-        </div>
-        <div class="col-md-6">
-            <h5>Email </h5>
-            <span>XXX123@gmail.com</span>
+        <div class="col-md-5 my-2 mx-5 text-center detail-block">
+            <span class="h5">Age :</span>
+            <span class="px-2"> 26 </span>
         </div>
     </div>
-    <div class="row my-2">
-        <h5>Motif : </h5>
-        <span>besoin de parler</span>
+    <div class="row my-2 d-flex justify-content-center text-light">
+        <div class="col-md-5 my-2 mx-5 text-center detail-block">
+            <span class="h5">Télphone :</span>
+            <span class="px-2"> 06 24 52 39 56</span>
+        </div>
+        <div class="col-md-5 my-2 mx-5 text-center detail-block">
+            <span class="h5">Email :</span>
+            <span class="px-2">XXX123@gmail.com</span>
+        </div>
     </div>
-    <div class="row my-2">
-        <h5>Description</h5>
-        <p>
+    <div class="row my-2 d-flex justify-content-center text-light ">
+        <div class="col-md-6 my-2 mx-5 text-center detail-block">
+            <span class="h5">Motif : </span>
+            <span>besoin de parler</span>
+        </div>
+
+    </div>
+    <div class="row my-2 d-flex justify-content-center text-light">
+        <p class="detail-block">
+            <span class="text-center h5 mb-2">Description :</span><br>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, distinctio aliquid, at
             perspiciatis
             sint facilis doloribus nulla omnis error dolores quam impedit. Amet expedita doloribus fugiat
