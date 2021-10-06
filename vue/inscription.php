@@ -1,18 +1,9 @@
 <?php include('../modele/server.php') ?>
 
+<?php
+include_once "../Vue/header.php";
+?>
 
-<html lang="fr">
-
-<head>
-    <meta charset="utf-8">
-    <!-- importer le fichier de style -->
-    <link rel="stylesheet" href="../vue/css/boostrap.css" media="screen" type="text/css"/>
-    <link href="../vue/css/boostrap.css" rel="stylesheet"
-          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="../vue/css/index.css">
-</head>
-
-<body>
 <div class="container" id="101">
     <main>
         <div class="py-5 text-center">
@@ -103,15 +94,7 @@
         </div>
     </main>
 </div>
+<?php
+include_once "../Vue/footer.php";
+?>
 
-
-<script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-<script src="form-validation.js"></script>
-
-
-</body>
-
-</html>
