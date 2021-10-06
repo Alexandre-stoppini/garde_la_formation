@@ -1,13 +1,15 @@
 <?php
 session_start();
-include('demande.php');
+
 $mail = "";
 $errors = array();
+
 /** Connexion bdd */
 $db = mysqli_connect('localhost', 'root', '', 'garde_la_formation');
 if (mysqli_connect_errno()) {
     exit('Failed to connect to MYSQL : ' . mysqli_connect_error());
 }
+
 /** Inscription */
 if (isset($_POST['reg_user'])) {
     $firstName = mysqli_real_escape_string($db, $_POST['firstName']);
@@ -19,6 +21,8 @@ if (isset($_POST['reg_user'])) {
     $mail = mysqli_real_escape_string($db, $_POST['email']);
     $passwd = mysqli_real_escape_string($db, $_POST['psw']);
     $passwd_rep = mysqli_real_escape_string($db, $_POST['psw-repeat']);
+
+
     if (empty($mail)) {
         array_push($errors, "Mail requis");
     }
@@ -28,19 +32,24 @@ if (isset($_POST['reg_user'])) {
     if ($passwd !== $passwd_rep) {
         array_push($errors, "Mot de passe non similaires");
     }
+
     /** Vérification dans bdd pour éviter doublon */
     $user_check_query = "SELECT * FROM users WHERE mail='$mail' LIMIT 1";
     $result = mysqli_query($db, $user_check_query);
     $users = mysqli_fetch_assoc($result);
+
+
     if ($users['username'] === $mail) {
         array_push($errors, "Mail déjà utilisé");
     }
+
+
     if (count($errors) === 0) {
 
         $query = "INSERT INTO users (prenom, nom, phone ,address_1, address_2, age, mail, passwd) VALUES ('$firstName', '$name', '$phone', '$address_1', '$address_2', '$age', '$mail', '" . password_hash($passwd, PASSWORD_DEFAULT, array("cost" => 10)) . "')";
         mysqli_query($db, $query);
-//        $_SESSION['prenom'] = $firstName;
-//        $_SESSION['succes'] = "Connexion réussi";
+        $_SESSION['prenom'] = $firstName;
+        $_SESSION['succes'] = "Connexion réussi";
         header('location: login.php');
     } else {
         foreach ($errors as $val) {
@@ -49,7 +58,10 @@ if (isset($_POST['reg_user'])) {
         exit();
     }
 }
+
 /** Login */
+
+
 if (isset($_POST['login_user'])) {
     if (!isset($_POST['email'], $_POST['psw'])) {
         exit('Please fill both the username and password fields!');
@@ -60,6 +72,7 @@ if (isset($_POST['login_user'])) {
         $stmt->execute();
         // Store the result so we can check if the account exists in the database.
         $stmt->store_result();
+
         if ($stmt->num_rows > 0) {
             $stmt->bind_result($id, $password);
             $stmt->fetch();
@@ -83,10 +96,10 @@ if (isset($_POST['login_user'])) {
             // Incorrect username
             echo 'Incorrect username and/or password!';
         }
+
         $stmt->close();
     }
 }
-
 if (isset($_POST['post_demande'])) {
 
     $motif = mysqli_real_escape_string($db, $_POST['motif']);
