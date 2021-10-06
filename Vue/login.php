@@ -5,8 +5,8 @@
 <head>
   <meta charset="utf-8">
   <!-- importer le fichier de style -->
-  <link rel="stylesheet" href="../vue/css/boostrap.css" media="screen" type="text/css" />
-  <link href="../vue/css/boostrap.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="./src/css/boostrap.css" media="screen" type="text/css" />
+  <link href="./src/css/boostrap.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
 </head>
 
