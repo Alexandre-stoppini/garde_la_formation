@@ -12,8 +12,8 @@ include_once "../Vue/header.php";
             <form class="needs-validation" novalidate="" method="post" action="inscription.php">
                 <div class="row g-3">
                     <div class="col-sm-6">
-                        <label for="firstName" class="form-label">Prénom</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" name="firstName">
+                        <label for="firstName" class="form-label"></label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Prénom" value="" required="" name="firstName">
                         <div class="invalid-feedback">
                             Ce champs est important
                         </div>
