@@ -1,9 +1,11 @@
+<?php include("../modele/server.php");?>
+
 <html lang="fr">
 <head>
     <meta charset="utf-8">
     <!-- importer le fichier de style -->
-    <link rel="stylesheet" href="boostrap.css" media="screen" type="text/css"/>
-    <link href="boostrap.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../vue/css/boostrap.css" media="screen" type="text/css"/>
+    <link href="../vue/css/boostrap.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
   </head>
   
@@ -68,17 +70,17 @@ hr:after {
 <body class="text-center">
     
   <main class="form-signin">
-    <form action="verification.php" method="POST">
+    <form action="login.php" method="POST">
      
       <h1 class="h3 mb-3 fw-normal">Connexion</h1>
   
       <div class="form-floating">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" data-form-type="email">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" data-form-type="email" name="email">
         <label for="floatingInput">Adresse mail</label>
       
       </div>
       <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" data-form-type="password">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" data-form-type="password" name="psw">
         <label for="floatingPassword">Mot de passe</label>
       
     </div>
@@ -87,10 +89,11 @@ hr:after {
           <input type="checkbox" value="remember-me"  data-form-type="consent,rememberme"> se souvenir de moi</input>
         </label>
       </div>
-      <button class="w-100 btn btn-lg btn-primary " type="submit" id='submit' >Connexion</button>
+      <button class="w-100 btn btn-lg btn-primary " type="submit" id='submit' name="login_user">Connexion</button>
                   
       <!-- <?php
      if (isset($_GET['erreur'])) {
+         var_dump($_GET['erreur']);
          $err = $_GET['erreur'];
          if ($err == 1 || $err == 2) echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
      }
@@ -98,9 +101,13 @@ hr:after {
       
     </form>
     <hr>
-    <form action="Inscription.php" method="POST">
-      <p type="submit" id='submit'>Inscription</p>
-    </form>
+
+      <div class="container_signin">
+          <p>Pas encore inscrit ? <a href="inscription.php">Inscription</a></p>
+      </div>
+<!--        <form action="Inscription.php" method="POST">-->
+<!--          <p type="submit" id='submit'>Inscription</p>-->
+<!--        </form>-->
     
   </main>
   
