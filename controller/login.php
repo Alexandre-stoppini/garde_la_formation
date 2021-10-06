@@ -66,13 +66,22 @@ hr:after {
     position: relative;
     top: -13px;
 }
+#blanc{
+  color: #fff;
+
+}
+#inscription{
+  color: #9AB3F5;
+
+}
+
 </style>
 <body class="text-center">
     
   <main class="form-signin">
     <form action="login.php" method="POST">
      
-      <h1 class="h3 mb-3 fw-normal">Connexion</h1>
+      <h1 id="blanc" class="h3 mb-3 fw-normal">Connexion</h1>
   
       <div class="form-floating">
         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" data-form-type="email" name="email">
@@ -86,7 +95,8 @@ hr:after {
     </div>
       <div class="checkbox mb-3">
         <label data-dashlane-label="true">
-          <input type="checkbox" value="remember-me"  data-form-type="consent,rememberme"> se souvenir de moi</input>
+          <input type="checkbox" for="remember-me" value="remember-me"  data-form-type="consent,rememberme"> </input>
+          <label for="remember-me" id="blanc">se souvenir de moi</label>
         </label>
       </div>
       <button class="w-100 btn btn-lg btn-primary " type="submit" id='submit' name="login_user">Connexion</button>
@@ -103,7 +113,7 @@ hr:after {
     <hr>
 
       <div class="container_signin">
-          <p>Pas encore inscrit ? <a href="inscription.php">Inscription</a></p>
+          <p id="blanc">Pas encore inscrit ? <a href="inscription.php" id="inscription">Inscription</a></p>
       </div>
 <!--        <form action="Inscription.php" method="POST">-->
 <!--          <p type="submit" id='submit'>Inscription</p>-->

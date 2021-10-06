@@ -9,10 +9,10 @@ include_once "../Vue/header.php";
         <div class="py-5 text-center">
             <h2>Inscription</h2>
         </div>
-        <div class="col-md-7 col-lg-8">
+        <div class="col-md-12">
             <form class="needs-validation" novalidate="" method="post" action="inscription.php">
                 <div class="row g-3">
-                    <div class="col-sm-6">
+                    <div class="col-sm-4 offset-md-2">
                         <label for="firstName" class="form-label">Prénom</label>
                         <input type="text" class="form-control" id="firstName" placeholder="" value="" required=""
                                name="firstName">
@@ -21,7 +21,7 @@ include_once "../Vue/header.php";
                         </div>
                     </div>
 
-                    <div class="col-sm-6">
+                    <div class="col-sm-4 offset-md-2">
                         <label for="lastName" class="form-label">Nom</label>
                         <input type="text" class="form-control" id="lastName" placeholder="" value="" required=""
                                name="lastName">
@@ -94,6 +94,7 @@ include_once "../Vue/header.php";
         </div>
     </main>
 </div>
+
 <?php
 include_once "../Vue/footer.php";
 ?>
