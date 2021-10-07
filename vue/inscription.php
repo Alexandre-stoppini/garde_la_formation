@@ -80,22 +80,11 @@ include_once "header.php";
                         </div>
                     </div>
                 </div>
-<<<<<<< HEAD
-                   
-                   
-
-                    <div class="offset-2 col-4">
-                    <br>  
-                        <button class="w-100 btn btn-primary btn-lg" type="submit" name="reg_user">Valider l'inscription</button>
-                    </div>  
-                    <br>       
-=======
                 <div class="offset-2 col-4">
                     <br>
                     <button class="w-100 btn btn-primary btn-lg" type="submit" name="reg_user">Valider l'inscription</button>
                 </div>
                 <br>
->>>>>>> dev_Xin
             </form>
 
 
