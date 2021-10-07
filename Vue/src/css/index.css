@@ -50,9 +50,7 @@ body{
     border-radius: 20px;
     padding:10px 50px;
 }
- /* .input-inscription{
-    border-radius: 30rem;
-} */
+
 #lastName{
     border-radius: .30rem;
 }
@@ -133,7 +131,10 @@ body{
 #lieu-filtre:focus,
 .option-filtre{
     background-color: #7579E7;
+    color: #fff;
 }
+
+.option-filtre:focus{box-shadow: none;} 
 #lieu-filtre{
     color: #fff;
 }
