@@ -35,7 +35,7 @@ if (isset($_POST['reg_user'])) {
     }
     if (count($errors) === 0) {
 
-        $stmt = $db ->prepare("INSERT INTO users (prenom, nom, phone ,address, age, mail, passwd) VALUES ('$firstName', '$name', '$phone', '$address', '$age', '$mail', '" . password_hash($passwd, PASSWORD_DEFAULT, array("cost" => 10)) . "')");
+        $stmt = $db->prepare("INSERT INTO users (prenom, nom, phone ,address, age, mail, passwd) VALUES ('$firstName', '$name', '$phone', '$address', '$age', '$mail', '" . password_hash($passwd, PASSWORD_DEFAULT, array("cost" => 10)) . "')");
         $stmt->execute();
         $stmt->close();
         $_SESSION['prenom'] = $firstName;
@@ -55,12 +55,12 @@ if (isset($_POST['spe_user'])) {
         $stmt = $db->prepare("UPDATE users SET benevole = 1,  role_set = 1 WHERE id = " . ($_SESSION['id']));
     } elseif ($role == "pro") {
         $stmt = $db->prepare("UPDATE users SET benevole =1, pro =1, role_set = 1 WHERE id = " . ($_SESSION['id']));
-    } else {
-        $stmt = $db->prepare("UPDATE users SET role_set = 1 WHERE id = " . ($_SESSION['id']));
+    } elseif ($role == "demandeur") {
+        $stmt = $db->prepare("UPDATE users SET role_set = 1, disease = '".$_POST["disease"]."' WHERE id = " . ($_SESSION['id']));
     }
     $stmt->execute();
     $stmt->close();
-    header('location: ../index.php');
+    header('location: ../Vue/index.php');
 }
 /** Login */
 if (isset($_POST['login_user'])) {
@@ -112,4 +112,12 @@ if (isset($_POST['post_demande'])) {
     }
     header('location: ../Vue/index.php');
 
+}
+if (isset($_POST['lorem'])) {
+    if ($stmt = $db->prepare("SELECT * FROM demande")) {
+
+        $stmt->execute();
+        $stmt->bind_result($demandes);
+        $stmt->close();
+    }
 }
