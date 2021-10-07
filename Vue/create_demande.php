@@ -1,10 +1,10 @@
 <?php
-include_once "../Vue/header.php";
+include_once "header.php";
 include "../modele/server.php"
 ?>
 <div class="container my-5 create-box">
     <h1 class="text-center text-light mb-5">Créer une annonce</h1>
-    <form method="post" action="page_Ajoute.php">
+    <form method="post" action="create_demande.php">
         <div class="mb-3 create-inputs py-3">
             <select name="motif" id="motif" class="form-select">
                 <option value="" style="display: none;">Motif :</option>
@@ -25,5 +25,5 @@ include "../modele/server.php"
     </form>
 </div>
 <?php
-include_once "../Vue/footer.php";
+include_once "footer.php";
 ?>

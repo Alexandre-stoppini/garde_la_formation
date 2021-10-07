@@ -3,7 +3,7 @@ session_start();
 $mail = "";
 $errors = array();
 /** Connexion bdd */
-$db = mysqli_connect('localhost', 'root', '', 'garde_la_formation');
+$db = mysqli_connect('localhost', 'admin', 'admin', 'garde_la_formation');
 if (mysqli_connect_errno()) {
     exit('Failed to connect to MYSQL : ' . mysqli_connect_error());
 }
@@ -110,6 +110,6 @@ if (isset($_POST['post_demande'])) {
 
         $query->execute();
     }
-    header('location: ../Vue/index.php');
+    header('location: index.php');
 
 }
