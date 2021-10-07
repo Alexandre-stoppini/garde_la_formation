@@ -3,7 +3,6 @@ session_start();
 include_once "../Vue/header.php";
 include_once "../modele/functions.php";
 $profil = get_profil();
-var_dump( $profil);
 ?>
 <div class="row d-flex justify-content-center text-light ">
     <div class="col-md-12">
@@ -62,12 +61,12 @@ var_dump( $profil);
                 <span style="color: white;"><?php echo $profil[0]['pro'] ?></span>
             </div>
         </div>
-<!--        <div class="row my-2 d-flex justify-content-center text-light ">-->
-<!--            <div class="col-md-4 my-2 mx-5 text-center detail-block">-->
-<!--                <h6 style="color: white;">Mot de passe :</h6>-->
-<!--                <span style="color: white;">**********</span>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row my-2 d-flex justify-content-center text-light ">-->
+        <!--            <div class="col-md-4 my-2 mx-5 text-center detail-block">-->
+        <!--                <h6 style="color: white;">Mot de passe :</h6>-->
+        <!--                <span style="color: white;">**********</span>-->
+        <!--            </div>-->
+        <!--        </div>-->
         <div class="text-end mb-3 me-5">
             <a href="./create_demande.php" class="h5 nav-link" id="btn-profil">Créer une annonce</a>
         </div>
