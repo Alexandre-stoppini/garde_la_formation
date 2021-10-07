@@ -60,3 +60,21 @@ body{
 #firstName{
     border-radius: .40rem;
 }
+.text_profil{
+    color: #fff;
+}
+#btn-profil{
+    display: inline-block;
+    background-color: #B9FFFC;
+    border-radius: 20px;
+    padding: 10px 30px;
+    
+
+}
+#btn-profil_modif{
+    display: inline-block;
+    background-color: #9AB3F5;
+    border-radius: 10px;
+    color: white;
+   
+}
