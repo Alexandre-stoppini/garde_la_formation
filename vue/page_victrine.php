@@ -16,7 +16,7 @@
 </body>
 
 </html>
-<div class="container-fluid my-5" style="background-image: url(./src/img/bg.png);">
+<div class="container-fluid" style="background-image: url(./src/img/bg.png);">
     <div class="d-flex justify-content-end me-5 my-5">
         <a href="#" class="btn me-5 px-5 py-2 text-light" style="border: 2px solid #fff;
     border-radius: 30px;">Se connecter</a>
