@@ -82,7 +82,7 @@ include_once "header.php";
                 </div>
                 <div class="offset-2 col-4">
                     <br>
-                    <button class="w-100 btn btn-primary btn-lg" type="submit" name="reg_user">Valider l'inscription</button>
+                    <button class="w-100 btn btn-primary btn-lg" type="submit" id="btn-profil_modif" name="reg_user">Valider l'inscription</button>
                 </div>
                 <br>
             </form>
@@ -91,7 +91,7 @@ include_once "header.php";
         </div>
         <div class="container_signin text-center">
 
-            <p style="color: white;">Déjà inscrit ? <a href="login.php">Connexion</a></p>
+            <p style="color: white;">Déjà inscrit ? <a href="login.php" style="color: #9AB3F5;">Connexion</a></p>
 
         </div>
     </main>
