@@ -1,17 +1,16 @@
 <?php
 include_once "../Vue/header.php";
 ?>
-<div class="row d-flex justify-content-center text-light ">
+    <div class="row d-flex justify-content-center text-light ">
         <div class="col-md-12">
-        <a href="./index.php"><img src="./src/img/Rectangle_21.png"  alt=""></a>
+        <img src="./src/img/banniere.jpg"  alt="">
         </div>
     </div>
 <div class="container">
 
-    <div class="container">
-    <div class="detail-block"> 
-  
-      <div class="row my-2 d-flex justify-content-center text-light ">
+    <div class="container" style=" border: 1px solid #fff; border-radius: 20px;">
+       
+      <div class="row justify-content-center text-light ">
             <div class="col-md-8 my-2 mx-5 text-center detail-block">
                 <h5 style="color: white;"  style="color: white;">Biographie :</h5>
                 <span style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada,
@@ -67,11 +66,11 @@ include_once "../Vue/header.php";
         
       
             
-        </div>
+    </div>
         <br>
         <a href="#" class="h5 nav-link" id="btn-profil" >Retourner</a>
 
-    </div>
+    
 </div>
 <?php
 include_once "../Vue/footer.php";
