@@ -60,7 +60,7 @@ if (isset($_POST['spe_user'])) {
     }
     $stmt->execute();
     $stmt->close();
-    header('location: ../Vue/index.php');
+    header('location: index.php');
 }
 /** Login */
 if (isset($_POST['login_user'])) {
@@ -85,9 +85,9 @@ if (isset($_POST['login_user'])) {
                 $_SESSION['loggedin'] = TRUE;
                 $_SESSION['id'] = $id;
                 if ($role_set == 0) {
-                    header('location: ../Vue/page_choix.php');
+                    header('location: page_choix.php');
                 } else {
-                    header('location: ../Vue/index.php');
+                    header('location: index.php');
                 }
             } else {
                 // Incorrect password
