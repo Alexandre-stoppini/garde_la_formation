@@ -79,3 +79,39 @@ body{
     width: 100%;
     display: inline-block;
 }
+.create-box .create-inputs{
+    border: 1px solid #fff;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+.create-box .form-select,.create-box .form-control{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    background: none;
+    border: none;
+    color: white;
+}
+.create-box .form-control:focus,.create-box .form-select:focus{
+    box-shadow: none;
+}
+.create-box .create-btn,.detail-btn{
+    border: 1px solid #fff;
+    border-radius: 30px;
+}
+#lieu::-webkit-input-placeholder {
+  color: white;
+}
+#lieu:-moz-placeholder {
+  color: white;
+}
+#lieu:-ms-input-placeholder {
+  color: white;
+}
+#profil-img{
+    position: absolute;
+    z-index: 999;
+    top: 120px;
+    left: 320px;
+}
