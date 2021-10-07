@@ -5,6 +5,11 @@ include_once "../Vue/header.php";
 
     <div class="container">
     <div class="detail-block"> 
+    <div class="row my-2 d-flex justify-content-center text-light ">
+        <div class="col-md-12">
+        <a href="./index.php"><img src="./src/img/Rectangle_21.png" id="logo" alt="logo"></a>
+        </div>
+    </div>
       <div class="row my-2 d-flex justify-content-center text-light ">
             <div class="col-md-8 my-2 mx-5 text-center detail-block">
                 <h5 style="color: white;"  style="color: white;">Biographie :</h5>
