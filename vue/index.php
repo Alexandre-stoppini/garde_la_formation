@@ -3,16 +3,16 @@ session_start();
 
 if (!isset($_SESSION['loggedin'])) {
     $_SESSION['msg'] = "You must log in first";
-    header('location: Vue/login.php');
+    header('location: login.php');
 }
 if (isset($_GET['logout'])) {
     session_destroy();
     unset($_SESSION['prenom']);
-    header("location: Vue/login.php");
+    header("location: login.php");
 }
 ?>
 <?php
-include_once "../Vue/header.php";
+include_once "header.php";
 ?>
 
 <div class="container-fluid p-0">
@@ -23,6 +23,7 @@ include_once "../Vue/header.php";
     <div id="image2"></div>
 </div>
 <div class="container-fluid py-5 px-0" id="image3">
+
     <div class="row justify-content-center">
         <div class="col-md-5 py-5 mx-3 my-3 profil-card">
             <div class="row">
@@ -99,5 +100,5 @@ include_once "../Vue/header.php";
     </div>
 </div>
 <?php
-include_once "../Vue/footer.php";
+include_once "footer.php";
 ?>
