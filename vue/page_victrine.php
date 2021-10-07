@@ -18,9 +18,9 @@
 </html>
 <div class="container-fluid" style="background-image: url(./src/img/bg.png);">
     <div class="d-flex justify-content-end me-5 my-5">
-        <a href="#" class="btn me-5 px-5 py-2 text-light" style="border: 2px solid #fff;
+        <a href="./login.php" class="btn me-5 px-5 py-2 text-light" style="border: 2px solid #fff;
     border-radius: 30px;">Se connecter</a>
-        <a href="#" class="btn px-5 py-2" style="border-radius: 30px; background-color:#B9FFFC">S'inscrire</a>
+        <a href="./inscription.php" class="btn px-5 py-2" style="border-radius: 30px; background-color:#B9FFFC">S'inscrire</a>
     </div>
     <div class="row">
         <div class="col-md-3 text-center"><img src="./src/img/logo.png" alt="" style="width: 100px; height:100px; border-radius:50% "></div>
@@ -37,7 +37,7 @@
         <div class="col-md-8" style="position: relative;left:100px;">
             <input type="text" class="form-control py-3 px-5" id="recherche" placeholder="Entrer votre adrresse mail" style="width: 80%; display:inline-block;
             border-radius: 30px; font-size:20px;">
-            <a href="#" class="btn text-dark px-3 py-1" style="z-index: 999;
+            <a href="./inscription.php" class="btn text-dark px-3 py-1" style="z-index: 999;
         position: relative;
         right: 140px;
         bottom: 4px;
