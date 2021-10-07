@@ -1,8 +1,8 @@
 <nav class="py-1">
     <div class="container-fluid">
         <div class="row text-center">
-            <div class="col "> <a href="create_demande.php" class="h5 nav-link">créer une annonce</a></div>
-            <div class="col "> <a href="create_offer.php" class="h5 nav-link">créer une offre</a></div>
+            <div class="col "> <a href="create_demande.php" class="h5 nav-link">Créer une annonce</a></div>
+            <!-- <div class="col "> <a href="create_offer.php" class="h5 nav-link">créer une offre</a></div> -->
 
             <div class="col "> <a href="#" class="h5 nav-link">Mes partenaires</a> </div>
             <div class="col-md-1  ">
