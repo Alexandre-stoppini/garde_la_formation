@@ -113,11 +113,3 @@ if (isset($_POST['post_demande'])) {
     header('location: ../Vue/index.php');
 
 }
-if (isset($_POST['lorem'])) {
-    if ($stmt = $db->prepare("SELECT * FROM demande")) {
-
-        $stmt->execute();
-        $stmt->bind_result($demandes);
-        $stmt->close();
-    }
-}
