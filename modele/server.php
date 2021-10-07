@@ -35,7 +35,7 @@ if (isset($_POST['reg_user'])) {
     }
     if (count($errors) === 0) {
         
-        $stmt = $db ->prepare("INSERT INTO users (prenom, nom, phone ,address, age, mail, passwd) VALUES ('$firstName', '$name', '$phone', '$address', '$age', '$mail', '" . password_hash($passwd, PASSWORD_DEFAULT, array("cost" => 10)) . "')");
+        $stmt = $db ->prepare("INSERT INTO users (prenom, nom, phone ,address , age, mail, passwd) VALUES ('$firstName', '$name', '$phone', '$address', '$age', '$mail', '" . password_hash($passwd, PASSWORD_DEFAULT, array("cost" => 10)) . "')");
         $stmt->execute();
         $stmt->close();
         $_SESSION['prenom'] = $firstName;
