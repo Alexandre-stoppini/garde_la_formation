@@ -22,7 +22,6 @@ include_once "../Vue/header.php";
         <button type="submit" class="btn btn-success">Ajouter</button>
     </form>
 </div>
-
-</body>
-
-</html>
+<?php
+include_once "../Vue/footer.php";
+?>

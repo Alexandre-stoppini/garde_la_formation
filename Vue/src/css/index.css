@@ -40,9 +40,7 @@ nav{
     background-color: #fff;
     border-radius: 50%;
 }
-#101{
-    background-color: #7579E7;
-}
+
 body{
     background-color: #7579E7;
 }
@@ -60,6 +58,7 @@ body{
 #firstName{
     border-radius: .40rem;
 }
+<<<<<<< HEAD
 .text_profil{
     color: #fff;
 }
@@ -77,4 +76,9 @@ body{
     border-radius: 10px;
     color: white;
    
+=======
+.img-loading{
+    width: 100%;
+    display: inline-block;
+>>>>>>> dev_Xin
 }
