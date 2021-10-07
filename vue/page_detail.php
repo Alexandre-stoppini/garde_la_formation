@@ -5,7 +5,7 @@ include_once "../Vue/header.php";
 <div class="container my-5 page_detail">
     <div class="row">
         <div class="col-md-2">
-            <a href="./index.php" class="btn">Retour</a>
+            <a href="./index.php" class="btn px-5 mx-2 py-2 detail-btn text-light">Retour</a>
         </div>
     </div>
     <h1 class="mb-3 text-center text-light">Détail de demande</h1>
