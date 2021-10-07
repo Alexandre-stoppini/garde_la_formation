@@ -6,19 +6,17 @@ include "../modele/server.php"
     <h1 class="text-center text-light mb-5">Créer une annonce</h1>
     <form method="post" action="page_Ajoute.php">
         <div class="mb-3 create-inputs py-3">
-            <label for="motif" class="form-label">Motif : </label>
             <select name="motif" id="motif" class="form-select">
-                <option value="non-urgent">Envie de sortir de la solitude</option>
-                <option value="urgent">Besoin de parler avec un pro</option>
+                <option value="" style="display: none;">Motif :</option>
+                <option class="text-dark" value="non-urgent">Envie de sortir de la solitude</option>
+                <option class="text-dark" value="urgent">Besoin de parler avec un pro</option>
             </select>
         </div>
         <div class="mb-3 create-inputs py-3">
-            <label for="lieu" class="form-label">Lieu : </label>
-            <input type="text" class="form-control" id="lieu" name="lieu">
+            <input type="text" class="form-control" placeholder="Lieu :" id="lieu" name="lieu">
         </div>
         <div class="mb-3 create-inputs py-3">
-            <label for="description">Description</label>
-            <textarea class="form-control" id="description" name="description" rows="10"></textarea>
+            <textarea class="form-control" id="description" name="description" rows="10">Description :</textarea>
         </div>
         <div class="text-center">
             <a href="./page_profil.php" class="btn px-5 mx-2 py-2 create-btn text-light">Annuler</a>
