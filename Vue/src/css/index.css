@@ -110,6 +110,15 @@ body{
 #lieu:-ms-input-placeholder {
   color: white;
 }
+#description::-webkit-input-placeholder {
+    color: white;
+  }
+  #description:-moz-placeholder {
+    color: white;
+  }
+  #description:-ms-input-placeholder {
+    color: white;
+  }
 #profil-img{
     position: absolute;
     z-index: 999;

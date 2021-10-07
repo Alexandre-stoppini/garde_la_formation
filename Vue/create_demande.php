@@ -16,7 +16,7 @@ include "../modele/server.php"
             <input type="text" class="form-control" placeholder="Lieu :" id="lieu" name="lieu">
         </div>
         <div class="mb-3 create-inputs py-3">
-            <textarea class="form-control" id="description" name="description" placeholder="Lieu :" rows="10"></textarea>
+            <textarea class="form-control" id="description" name="description" placeholder="Description :" rows="10"></textarea>
         </div>
         <div class="text-center">
             <a href="./page_profil.php" class="btn px-5 mx-2 py-2 create-btn text-light">Annuler</a>
