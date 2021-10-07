@@ -1,5 +1,9 @@
 <?php
+session_start();
 include_once "../Vue/header.php";
+include_once "../modele/functions.php";
+$profil = get_profil();
+var_dump( $profil);
 ?>
 <div class="row d-flex justify-content-center text-light ">
     <div class="col-md-12">
@@ -25,47 +29,47 @@ include_once "../Vue/header.php";
 
             <div class="col-md-4 my-2 mx-5 text-center detail-block">
                 <h6 style="color: white;" style="color: white;font-size: 0.8em;">Nom :</h6>
-                <span style="color: white;">XXX XXX</span>
+                <span style="color: white;"><?php echo $profil[0]['nom'] ?></span>
             </div>
         </div>
         <div class="row my-2 d-flex justify-content-center text-light ">
             <div class="col-md-4 my-2 mx-5 text-center detail-block">
                 <h6 style="color: white;" style="color: white;">Prénom :</h6>
-                <span style="color: white;">XXX XXX</span>
+                <span style="color: white;"><?php echo $profil[0]['prenom'] ?></span>
             </div>
         </div>
         <div class="row my-2 d-flex justify-content-center text-light  ">
             <div class="col-md-4 my-2 mx-5 text-center detail-block">
                 <h6 style="color: white;">Télephone :</h6>
-                <span style="color: white;">06 87 56 89 42</span>
+                <span style="color: white;"><?php echo $profil[0]['phone'] ?></span>
             </div>
         </div>
         <div class="row my-2 d-flex justify-content-center text-light ">
             <div class="col-md-4 my-2 mx-5 text-center detail-block ">
                 <h6 style="color: white;">Email :</h6>
-                <span style="color: white;">XXX123@gmail.com</span>
+                <span style="color: white;"><?php echo $profil[0]['mail'] ?></span>
             </div>
         </div>
         <div class="row my-2 d-flex justify-content-center text-light ">
             <div class="col-md-4 my-2 mx-5 text-center detail-block ">
                 <h6 style="color: white;">Age :</h6>
-                <span style="color: white;">36</span>
+                <span style="color: white;"><?php echo $profil[0]['age'] ?></span>
             </div>
         </div>
         <div class="row my-2 d-flex justify-content-center text-light ">
             <div class="col-md-4 my-2 mx-5 text-center detail-block ">
                 <h6 style="color: white;">Qualité :</h6>
-                <span style="color: white;">36</span>
+                <span style="color: white;"><?php echo $profil[0]['pro'] ?></span>
             </div>
         </div>
-        <div class="row my-2 d-flex justify-content-center text-light ">
-            <div class="col-md-4 my-2 mx-5 text-center detail-block">
-                <h6 style="color: white;">Mot de passe :</h6>
-                <span style="color: white;">**********</span>
-            </div>
-        </div>
+<!--        <div class="row my-2 d-flex justify-content-center text-light ">-->
+<!--            <div class="col-md-4 my-2 mx-5 text-center detail-block">-->
+<!--                <h6 style="color: white;">Mot de passe :</h6>-->
+<!--                <span style="color: white;">**********</span>-->
+<!--            </div>-->
+<!--        </div>-->
         <div class="text-end mb-3 me-5">
-            <a href="./page_Ajoute.php" class="h5 nav-link" id="btn-profil">Créer une annonce</a>
+            <a href="./create_demande.php" class="h5 nav-link" id="btn-profil">Créer une annonce</a>
         </div>
 
 
