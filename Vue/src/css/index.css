@@ -21,8 +21,9 @@ nav{
     border-radius: 50%;
 }
 #image1{
-    background-image: url();
-    height: 200px;
+    background-image: url(../img/bg-clair.png);
+    height: 300px;
+    background-size: cover;
 }
 #image2{
     background:#A3D8F4;
