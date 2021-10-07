@@ -23,7 +23,7 @@ $offres = get_offres();
 </div>
 <div class="container-fluid p-0">
     <div id="image2" class="row ">
-        <div class="col-md-3 ms-5">
+        <div class="col-md-3 ms-5 ">
             <select name="motif" class="py-3 form-select text-center option-filtre">
                 <option value="" style="display: none;">Trouble :</option>
                 <option class="text-dark" value="non-urgent">Envie de sortir de la solitude</option>
@@ -50,7 +50,7 @@ $offres = get_offres();
 <div class="container-fluid py-5 px-0" id="image3">
     <div class="row justify-content-center">
 
-        <h2>DEMANDES</h2>
+ 
         <?php
         foreach ($demandes as $demande) {
         ?>
