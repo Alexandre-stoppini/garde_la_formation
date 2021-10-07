@@ -1,6 +1,6 @@
 <?php include('../modele/server.php') ?>
 <?php
-include_once "../Vue/header.php";
+include_once "header.php";
 ?>
 
 <div class="container">
@@ -82,21 +82,7 @@ include_once "../Vue/header.php";
                 </div>
                    
                    
-                    <!-- <div class="col-12">
-                        <label for="address" class="form-label">Adresse</label>
-                        <input type="text" class="form-control" id="address" name="address_1">
-                        <div class="invalid-feedback">
-                            Veuillez entrer votre adresse
-                        </div>
-                    </div> -->
-                    
-                    <!--                    <div class="col-md-4">-->
-                    <!--                        <label for="state" class="form-label">Pays</label>-->
-                    <!--                        <input type="text" class="form-control" id="country" name="country">-->
-                    <!--                        <div class="invalid-feedback">-->
-                    <!--                            Veuillez choisir un Pays-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
+
                     <div class="offset-2 col-4">
                     <br>  
                         <button class="w-100 btn btn-primary btn-lg" type="submit" name="reg_user">Valider l'inscription</button>
@@ -114,5 +100,5 @@ include_once "../Vue/header.php";
     </main>
 </div>
 <?php
-include_once "../Vue/footer.php";
+include_once "footer.php";
 ?>

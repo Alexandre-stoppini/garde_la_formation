@@ -87,7 +87,7 @@ if (isset($_POST['login_user'])) {
                 if ($role_set == 0) {
                     header('location: ../Vue/page_choix.php');
                 } else {
-                    header('location: ../index.php');
+                    header('location: ../Vue/index.php');
                 }
             } else {
                 // Incorrect password
@@ -110,6 +110,6 @@ if (isset($_POST['post_demande'])) {
 
         $query->execute();
     }
-
+    header('location: ../Vue/index.php');
 
 }
