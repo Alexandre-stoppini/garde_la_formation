@@ -40,9 +40,7 @@ nav{
     background-color: #fff;
     border-radius: 50%;
 }
-#101{
-    background-color: #7579E7;
-}
+
 body{
     background-color: #7579E7;
 }
@@ -59,4 +57,8 @@ body{
 }
 #firstName{
     border-radius: .40rem;
+}
+.img-loading{
+    width: 100%;
+    display: inline-block;
 }

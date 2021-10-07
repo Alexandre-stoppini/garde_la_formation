@@ -11,7 +11,7 @@ include_once "../Vue/header.php";
         <div class="col-md- col-lg-9 offset-3">
             <form class="needs-validation" novalidate="" method="post" action="inscription.php">
                 <div class="row">
-                    
+
                     <div class="col-sm-4">
                         <label for="firstName" class="form-label"></label>
                         <input type="text" class="form-control" id="firstName" placeholder="Prénom" value="" required="" name="firstName">
@@ -19,7 +19,7 @@ include_once "../Vue/header.php";
                             Ce champs est important
                         </div>
                     </div>
-               
+
                     <div class="col-sm-4 ">
                         <label for="lastName" class="form-label"></label>
                         <input type="text" class="form-control" id="lastName" placeholder="Nom" value="" required="" name="lastName">
@@ -38,23 +38,23 @@ include_once "../Vue/header.php";
                     </div>
                     <div class="col-4">
                         <label for="tel" class="form-label"> <span class="text-muted"></span></label>
-                        <input type="tel" class="form-control" id="tel"  placeholder="Téléphone" name="phone">
+                        <input type="tel" class="form-control" id="tel" placeholder="Téléphone" name="phone">
                         <div class="invalid-feedback">
                             Veuillez entrer votre numéro de téléphone.
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="row">
-                    
-                <div class="col-4">
+
+                    <div class="col-4">
                         <label for="age" class="form-label"><span class="text-muted"></span></label>
                         <input type="age" class="form-control" placeholder="Age" id="age" name="age">
                         <div class="invalid-feedback">
                             Veuillez entrer votre âge
                         </div>
                     </div>
-               
+
                     <div class="col-md-4">
                         <label for="country" class="form-label"></label>
                         <input type="text" class="form-control" placeholder="Ville" id="ville" name="address">
@@ -63,7 +63,7 @@ include_once "../Vue/header.php";
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="row">
                     <div class="col-4">
                         <label for="firstName"></label>
@@ -80,37 +80,20 @@ include_once "../Vue/header.php";
                         </div>
                     </div>
                 </div>
-                   
-                   
-                    <!-- <div class="col-12">
-                        <label for="address" class="form-label">Adresse</label>
-                        <input type="text" class="form-control" id="address" name="address_1">
-                        <div class="invalid-feedback">
-                            Veuillez entrer votre adresse
-                        </div>
-                    </div> -->
-                    
-                    <!--                    <div class="col-md-4">-->
-                    <!--                        <label for="state" class="form-label">Pays</label>-->
-                    <!--                        <input type="text" class="form-control" id="country" name="country">-->
-                    <!--                        <div class="invalid-feedback">-->
-                    <!--                            Veuillez choisir un Pays-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
-                    <div class="offset-2 col-4">
-                    <br>  
-                        <button class="w-100 btn btn-primary btn-lg" type="submit" name="reg_user">Valider l'inscription</button>
-                    </div>  
-                    <br>       
+                <div class="offset-2 col-4">
+                    <br>
+                    <button class="w-100 btn btn-primary btn-lg" type="submit" name="reg_user">Valider l'inscription</button>
+                </div>
+                <br>
             </form>
-           
-                   
+
+
         </div>
         <div class="container_signin text-center">
-            
-                <p>Déjà inscrit ? <a href="login.php">Connexion</a></p>
-            
-            </div>
+
+            <p>Déjà inscrit ? <a href="login.php">Connexion</a></p>
+
+        </div>
     </main>
 </div>
 <?php
