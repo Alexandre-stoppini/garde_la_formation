@@ -3,6 +3,11 @@ include_once "../Vue/header.php";
 ?>
 
 <div class="container my-5 page_detail">
+    <div class="row">
+        <div class="col-md-2">
+            <a href="./index.php" class="btn">Retour</a>
+        </div>
+    </div>
     <h1 class="mb-3 text-center text-light">Détail de demande</h1>
     <div class="row my-2 d-flex justify-content-center text-light">
         <div class="col-md-5 my-2 mx-5 text-center detail-block">
