@@ -28,6 +28,7 @@ nav{
     background:#A3D8F4;
     height: 100px;
         align-items: center;
+        padding-left: 155px;
 }
 #image3{
     background:#7579E7;
@@ -117,8 +118,7 @@ body{
 #logo-recherche{
     width: 70px;
     position: relative;
-    left: 175px;
-}
+    left: 100px;}
 
 #lieu-filtre::-webkit-input-placeholder {
   color: white;
