@@ -6,7 +6,7 @@ include_once "header.php";
 <div class="container">
     <main>
         <div class="py-5 text-center">
-            <h2>Inscription</h2>
+            <h2 style="color: white;">Inscription</h2>
         </div>
         <div class="col-md- col-lg-9 offset-3">
             <form class="needs-validation" novalidate="" method="post" action="inscription.php">
@@ -91,7 +91,7 @@ include_once "header.php";
         </div>
         <div class="container_signin text-center">
 
-            <p>Déjà inscrit ? <a href="login.php">Connexion</a></p>
+            <p style="color: white;">Déjà inscrit ? <a href="login.php">Connexion</a></p>
 
         </div>
     </main>

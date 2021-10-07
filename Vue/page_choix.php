@@ -6,9 +6,10 @@ include_once "../Vue/header.php";
 <div class="container">
     <main>
         <div class="py-5 text-center">
-            <h2>Indiquez votre besoin</h2>
+            <h2 style="color: white;">Indiquez votre besoin</h2>
         </div>
-        <div class="col-md-7 col-lg-8">
+        <div class="row my-2 d-flex justify-content-center text-light">
+        <div class="col-md-7 col-lg ">
             <form class="needs-validation" novalidate="" method="post" action="page_choix.php">
                 <div class="row g-3">
 
@@ -39,6 +40,7 @@ include_once "../Vue/header.php";
 
 
         </div>
+</div>
     </main>
 </div>
 <script>
