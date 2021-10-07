@@ -27,6 +27,7 @@ nav{
 #image2{
     background:#A3D8F4;
     height: 100px;
+        align-items: center;
 }
 #image3{
     background:#7579E7;
@@ -117,7 +118,22 @@ body{
 #logo-recherche{
     width: 70px;
     position: relative;
-    top: 15px;
     left: 175px;
+}
 
+#lieu-filtre::-webkit-input-placeholder {
+  color: white;
+}
+#lieu-filtre:-moz-placeholder {
+  color: white;
+}
+#lieu-filtre:-ms-input-placeholder {
+  color: white;
+}
+#lieu-filtre:focus,
+.option-filtre{
+    background-color: #7579E7;
+}
+#lieu-filtre{
+    color: #fff;
 }

@@ -21,21 +21,21 @@ $demandes = get_demande();
 
     <div id="image2" class="row ">
         <div class="col-md-3 ms-5">
-            <select name="motif" id="motif" class="form-select">
+            <select name="motif" class="py-3 form-select text-center option-filtre">
                 <option value="" style="display: none;">Motif :</option>
                 <option class="text-dark" value="non-urgent">Envie de sortir de la solitude</option>
                 <option class="text-dark" value="urgent">Besoin de parler avec un pro</option>
             </select>
         </div>
         <div class="col-md-3">
-            <select name="motif" id="motif" class="form-select">
+            <select name="motif" class="py-3 form-select text-center option-filtre">
                 <option value="" style="display: none;">Motif :</option>
                 <option class="text-dark" value="non-urgent">Envie de sortir de la solitude</option>
                 <option class="text-dark" value="urgent">Besoin de parler avec un pro</option>
             </select>
         </div>
         <div class="col-md-3">
-            <input type="text" class="form-control" placeholder="Lieu :" id="lieu-filtre" name="lieu">
+            <input type="text" class="py-3 form-control text-center option-filtre" placeholder="Lieu :" id="lieu-filtre" name="lieu">
         </div>
         <div class="col-md-2">
             <a href="#"><img src="./src/img/recherche.png" alt="recherche" id="logo-recherche"></a>
