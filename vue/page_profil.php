@@ -3,7 +3,7 @@ include_once "../Vue/header.php";
 ?>
 <div class="row d-flex justify-content-center text-light ">
         <div class="col-md-12">
-        <a href="./index.php"><img src="./src/img/Rectangle_21.png"  alt=""></a>
+        <a href="./index.php"><img src="./src/img/banniere.jpg"  alt=""></a>
         </div>
     </div>
 <div class="container">
