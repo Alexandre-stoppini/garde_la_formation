@@ -33,8 +33,9 @@ $offres = get_offres();
         <div class="col-md-3">
             <select name="motif" class="py-3 form-select text-center option-filtre">
                 <option value="" style="display: none;">Niveau d'aide :</option>
-                <option class="text-dark" value="non-urgent">Envie de sortir de la solitude</option>
-                <option class="text-dark" value="urgent">Besoin de parler avec un pro</option>
+                <option class="text-dark" value="1">Faible</option>
+                <option class="text-dark" value="2">Moyen</option>
+                <option class="text-dark" value="3">Urgent</option>
             </select>
         </div>
         <div class="col-md-3">

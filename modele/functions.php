@@ -10,7 +10,7 @@ function convert($item)
 
 
         for ($i = 0; $i < 5; $i++) {
-            unset ($value[$i]);
+            unset($value[$i]);
         }
         $ar_result[] = $value;
     }
@@ -20,9 +20,8 @@ function convert($item)
 function get_demande()
 {
     $db = mysqli_connect('localhost', 'root', '', 'garde_la_formation');
-    $demandes = mysqli_query($db, "SELECT demande.motif, demande.description, demande.lieu, users.prenom, users.phone, users.disease FROM demande INNER JOIN users ON users.id = demande.id_user");
+    $demandes = mysqli_query($db, "SELECT demande.motif, demande.description,demande.niveau_aide, demande.lieu, users.prenom, users.phone, users.disease FROM demande INNER JOIN users ON users.id = demande.id_user");
     return convert($demandes);
-
 }
 
 function get_offres()
@@ -38,7 +37,7 @@ function get_offres()
 
 
         for ($i = 0; $i < 5; $i++) {
-            unset ($value[$i]);
+            unset($value[$i]);
         }
         $value["pro"] = $value["pro"] == "1" ? "Professionnel de la santé" : "Bénévole sans diplôme";
         $ar_result[] = $value;
@@ -49,7 +48,7 @@ function get_offres()
 function get_profil()
 {
     $db = mysqli_connect('localhost', 'root', '', 'garde_la_formation');
-    $profil = mysqli_query($db, "SELECT prenom, nom, address,age, pro, phone, mail FROM users WHERE id = ".$_SESSION["id"]);
+    $profil = mysqli_query($db, "SELECT prenom, nom, address,age, pro, phone, mail FROM users WHERE id = " . $_SESSION["id"]);
     $ar_inter = [];
     $ar_result = [];
     while ($row = mysqli_fetch_array($profil)) {
@@ -59,10 +58,13 @@ function get_profil()
 
 
         for ($i = 0; $i < 5; $i++) {
-            unset ($value[$i]);
+            unset($value[$i]);
         }
         $value["pro"] = $value["pro"] == "1" ? "Professionnel de la santé" : "Bénévole sans diplôme";
         $ar_result[] = $value;
     }
-    return ($ar_result);}
-
+    return ($ar_result);
+}
+function filtre()
+{
+}
