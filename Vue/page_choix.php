@@ -14,20 +14,43 @@ include_once "../Vue/header.php";
 
                     <div class="col-12">
                         <label for="firstName">Je suis :</label>
-                        <select id="role" class="form-select" name="role">
+                        <select id="role" class="form-select" name="role" onchange="fHidden()">
                             <option value="benevole">un(e) bénévole</option>
                             <option value="pro">un(e) professionnel(le) de la santé (justificatifs demandés)</option>
                             <option value="demandeur">à la recherche d'un coup de pouce pour mes études</option>
                         </select>
                     </div>
 
-                    <button class="w-100 btn btn-primary btn-lg" type="submit" name="spe_user">S'enregistrer</button>
+                    <div id = "select_disease" hidden class="col-12">
+                        <label>Je suis atteint de :</label>
+                        <select id="disease" class="form-semect" name="disease">
+                            <option value="schizophrénie">Schizophrénie</option>
+                            <option value="troubles_bipolaires">Troubles bipolaires</option>
+                            <option value="dépression_severe">Dépression sévère</option>
+                            <option value="dépression">Dépression</option>
+                            <option value="non_communiqué">Ne souhaite pas répondre</option>
+                        </select>
+                    </div>
+
+
+
+                    <button class="w-100 btn btn-primary btn-lg" type="submit" name="spe_user">Valider</button>
             </form>
 
 
         </div>
     </main>
 </div>
+<script>
+    function fHidden(){
+        var x = document.getElementById("role").value;
+        if (x === "demandeur"){
+            document.getElementById("select_disease").removeAttribute("hidden");
+        } else {
+            document.getElementById("select_disease").setAttribute("hidden", true   );
+        }
+    }
+</script>
 <?php
 include_once "../Vue/footer.php";
 ?>
