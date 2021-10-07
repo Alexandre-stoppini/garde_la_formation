@@ -25,7 +25,7 @@ $offres = get_offres();
     <div id="image2" class="row ">
         <div class="col-md-3">
             <select name="motif" class="py-3 form-select text-center option-filtre">
-                <option value="" style="display: none;">Trouble :</option>
+                <option value="" style="display: none;">Motif :</option>
                 <option class="text-dark" value="non-urgent">Envie de sortir de la solitude</option>
                 <option class="text-dark" value="urgent">Besoin de parler avec un pro</option>
             </select>
