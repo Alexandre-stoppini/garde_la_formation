@@ -4,12 +4,20 @@ include "../modele/server.php"
 ?>
 <div class="container my-5 create-box">
     <h1 class="text-center text-light mb-5">Créer une annonce</h1>
-    <form method="post" action="page_Ajoute.php">
+    <form method="post" action="create_demande.php">
         <div class="mb-3 create-inputs py-3">
             <select name="motif" id="motif" class="form-select">
                 <option value="" style="display: none;">Motif :</option>
                 <option class="text-dark" value="non-urgent">Envie de sortir de la solitude</option>
                 <option class="text-dark" value="urgent">Besoin de parler avec un pro</option>
+            </select>
+        </div>
+        <div class="mb-3 create-inputs py-3">
+            <select name="motif" id="niveau" class="form-select">
+                <option value="" style="display: none;">Niveau d'aide :</option>
+                <option class="text-dark" value="1">Faible</option>
+                <option class="text-dark" value="2">Moyen</option>
+                <option class="text-dark" value="3">Urgent</option>
             </select>
         </div>
         <div class="mb-3 create-inputs py-3">
