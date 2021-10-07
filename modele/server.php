@@ -56,7 +56,7 @@ if (isset($_POST['spe_user'])) {
     } elseif ($role == "pro") {
         $stmt = $db->prepare("UPDATE users SET benevole =1, pro =1, role_set = 1 WHERE id = " . ($_SESSION['id']));
     } elseif ($role == "demandeur") {
-        $stmt = $db->prepare("UPDATE users SET role_set = 1, disease = '".$_POST["disease"]."' WHERE id = " . ($_SESSION['id']));
+        $stmt = $db->prepare("UPDATE users SET role_set = 1, disease = '" . $_POST["disease"] . "' WHERE id = " . ($_SESSION['id']));
     }
     $stmt->execute();
     $stmt->close();
@@ -67,14 +67,14 @@ if (isset($_POST['login_user'])) {
     if (!isset($_POST['email'], $_POST['psw'])) {
         exit('Please fill both the username and password fields!');
     }
-    if ($stmt = $db->prepare('SELECT id, passwd, role_set FROM users WHERE mail = ?')) {
+    if ($stmt = $db->prepare('SELECT id, passwd, role_set, benevole FROM users WHERE mail = ?')) {
         // Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
         $stmt->bind_param('s', $_POST['email']);
         $stmt->execute();
         // Store the result so we can check if the account exists in the database.
         $stmt->store_result();
         if ($stmt->num_rows > 0) {
-            $stmt->bind_result($id, $password, $role_set);
+            $stmt->bind_result($id, $password, $role_set, $benevole);
             $stmt->fetch();
             // Account exists, now we verify the password.
             // Note: remember to use password_hash in your registration file to store the hashed passwords.
@@ -84,6 +84,7 @@ if (isset($_POST['login_user'])) {
                 session_regenerate_id();
                 $_SESSION['loggedin'] = TRUE;
                 $_SESSION['id'] = $id;
+                $_SESSION['benevole'] = $benevole;
                 if ($role_set == 0) {
                     header('location: ../Vue/page_choix.php');
                 } else {
@@ -109,7 +110,17 @@ if (isset($_POST['post_demande'])) {
     if ($query = $db->prepare("INSERT INTO demande (id_user, motif, lieu, description) VALUES (" . $_SESSION['id'] . ", '$motif', '$lieu', '$description')")) {
 
         $query->execute();
+        $query->close();
     }
     header('location: ../Vue/index.php');
 
+}
+if (isset($_POST['post_offer'])) {
+    $description = mysqli_real_escape_string($db, $_POST['description']);
+    $mobilite = mysqli_real_escape_string($db, $_POST['mobilite']);
+    if ($query = $db->prepare("INSERT INTO offre (id_user, mobilite, description) VALUES (" . $_SESSION['id'] . ",'$mobilite','$description')")) {
+        $query->execute();
+        $query->close();
+    }
+    header('location: ../Vue/index.php');
 }
