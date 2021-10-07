@@ -5,16 +5,16 @@ include_once "../Vue/header.php";
 
 <div class="container">
     <main>
-        <div class="py-5 text-center">
+        <div class="py-3 text-center">
             <h2 style="color: white;">Indiquez votre besoin</h2>
         </div>
         <div class="row my-2 d-flex justify-content-center text-light">
-        <div class="col-md-7 col-lg ">
+        <div class="col-md-7 col-lg-8">
             <form class="needs-validation" novalidate="" method="post" action="page_choix.php">
                 <div class="row g-3">
 
                     <div class="col-12">
-                        <label for="firstName">Je suis :</label>
+                        <label for="firstName" style="font-size: 1.5rem;">Je suis :</label>
                         <select id="role" class="form-select" name="role" onchange="fHidden()">
                             <option value="benevole">un(e) bénévole</option>
                             <option value="pro">un(e) professionnel(le) de la santé (justificatifs demandés)</option>
@@ -33,14 +33,15 @@ include_once "../Vue/header.php";
                         </select>
                     </div>
 
-
-
-                    <button class="w-100 btn btn-primary btn-lg" type="submit" name="spe_user">Valider</button>
+                    <div class="row my-2 d-flex justify-content-center text-light">
+                    <div class="col col-lg-6">
+                    <button class="w-100 btn btn-primary btn-lg" style=" display: inline-block;background-color: #9AB3F5;border-radius: 10px; color: white;" type="submit" name="spe_user">Valider</button>
+                    <div>
+                        <div>
             </form>
 
 
         </div>
-</div>
     </main>
 </div>
 <script>
